@@ -1,0 +1,1 @@
+Programa para verificar se um número é primo (1) ou não (0).
