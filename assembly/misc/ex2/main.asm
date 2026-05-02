@@ -3,7 +3,6 @@
 	.space 4
 
 .text
-main:
 	lui $t0, 0x1001
 	lw $t1, 0($t0)
 	addi $t2, $zero, 2

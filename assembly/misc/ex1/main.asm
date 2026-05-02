@@ -1,21 +1,18 @@
 .data
-	.word 3
-	.word 14
+	.word 2
+	.word 9
 	.space 4
 
 .text
-main:
 	lui $t0, 0x1001
 	lw $t1, 0($t0)
 	lw $t2, 4($t0)
 	addi $t3, $zero, 1
-	addi $t4, $zero, 1
-	addi $t5, $zero, 2
 
 loop_1:
 	beq $t2, $zero, return
-	andi $t6, $t2, 1
-	beq $t6, $t4, multiply
+	andi $t4, $t2, 1
+	bne $t4, $zero, multiply
 
 loop_2:
 	mult $t1, $t1
