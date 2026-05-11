@@ -5,7 +5,7 @@
 	# Para todo inteiro i no intervalo [0, 3]:
 	# vetor[2i] = 4i
 	# vetor[2i + 1] = 4i
-	
+
 	lui $t0, 0x1001        # Ponteiro
 	add $t1, $zero, $zero  # i
 	addi $t2, $zero, 4     # 4 (const)
@@ -21,4 +21,3 @@ loop:
 	j loop                 # Voltar para o loop
 
 end:
-	

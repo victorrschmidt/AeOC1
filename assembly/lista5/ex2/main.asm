@@ -20,4 +20,3 @@ loop:
 
 end:
 	sw $t4 4($t0)          # Armazenar resultado
-	

@@ -1,12 +1,12 @@
 .data
 	.space 32
-	
+
 .text
 	lui $t0, 0x1001        # Ponteiro
 	add $t1, $zero, $zero  # i
 	addi $t2, $zero, 8     # 8 (const)
 	addi $t3, $zero, 2     # 2 (const)
-	
+
 loop_1:
 	slt $t4, $t1, $t2      # Se ~(i < 8)
 	beq $t4, $zero, end    # Pular para o final
